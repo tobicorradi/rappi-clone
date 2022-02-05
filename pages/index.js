@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className="bg-white">
         <section className='search-banner bg-rappi-orange text-white text-4xl text-center h-64 flex items-center justify-center'>
-          <h1>Si tienes <strong>Rappi,</strong> tienes Todo.</h1>
+          <h1 className="font-thin">Si tienes <strong className="font-black">Rappi,</strong> tienes Todo.</h1>
         </section>
       </main>
     </div>
