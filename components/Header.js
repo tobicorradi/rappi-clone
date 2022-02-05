@@ -1,9 +1,10 @@
 import Image from "next/image";
+import logo from '../public/images/logo.png'
 
 const Header = () => {
     return (
         <header>
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png"/>
+            <Image src={logo} />
             Soy un header
         </header>
     );
