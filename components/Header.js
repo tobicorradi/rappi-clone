@@ -1,18 +1,18 @@
 import Image from "next/image";
-import { SearchIcon, ShoppingCartIcon } from '@heroicons/react/solid'
+import { SearchIcon, ShoppingCartIcon, MenuIcon } from '@heroicons/react/solid'
 const Header = () => {
     return (
-        <header className="bg-white p-5">
-            <div className="relative flex items-center h-8 cursor-pointer">
+        <header className="bg-white p-4 flex items-center justify-between">
+            <div className="flex items-center h-8">
+                <MenuIcon className="mr-3 h-6 text-slate-500 cursor-pointer" />
                 <Image 
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png"
-                    layout="fill"
-                    objectFit="contain"
-                    objectPosition="left"
+                    className="cursor-pointer"
+                    width={84}
+                    height={35}
                 />
             </div>
-            <div>
-                <form className="flex items-center bg-slate-50 px-4 py-2 rounded text-md">
+                <form className="flex flex-1 items-center bg-slate-50 px-4 py-2 rounded text-md mx-7 max-w-xl">
                     <input
                         className="flex-grow bg-transparent focus:outline-none" 
                         type="text"
@@ -24,7 +24,6 @@ const Header = () => {
                     <ShoppingCartIcon className="h-7 mr-2"/>
                     <span>0</span>
                 </button>
-                </div>
         </header>
     );
 };
