@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Banner from '../components/Banner'
+import Slider from '../components/Slider'
 export default function Home() {
   return (
     <div>
@@ -12,6 +12,7 @@ export default function Home() {
 
       <main className="bg-white">
         <Banner />
+        <Slider />
       </main>
     </div>
   )
