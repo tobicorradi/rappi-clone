@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SearchIcon, ShoppingCartIcon, MenuIcon } from '@heroicons/react/solid'
 const Header = () => {
     return (
-        <header className="bg-white px-3 py-2 flex items-center justify-between">
+        <header className="bg-white px-3 py-4 flex items-center justify-between">
             <div className="flex items-center h-8">
                 <MenuIcon className="mr-3 h-6 text-slate-500 cursor-pointer" />
                 <Image 
