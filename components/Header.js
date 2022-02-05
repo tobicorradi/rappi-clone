@@ -12,7 +12,7 @@ const Header = () => {
                     height={35}
                 />
             </div>
-            <form className="flex flex-1 grow-0 items-center bg-slate-50 px-4 py-2 rounded text-md mx-7 max-w-xl">
+            <form className="flex flex-1 items-center bg-slate-50 px-4 py-2 rounded text-md mx-7 max-w-xl">
                 <input
                     className="flex-grow bg-transparent focus:outline-none" 
                     type="text"
