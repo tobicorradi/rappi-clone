@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
+import Banner from '../components/Banner'
 export default function Home() {
   return (
     <div>
@@ -11,9 +11,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white">
-        <section className='search-banner bg-rappi-orange text-white text-4xl text-center h-64 flex items-center justify-center'>
-          <h1 className="font-thin">Si tienes <strong className="font-black">Rappi,</strong> tienes Todo.</h1>
-        </section>
+        <Banner />
       </main>
     </div>
   )
