@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
-import Slider from '../components/Slider'
-export default function Home() {
+export default function Home({categories}) {
+  console.log(categories)
   return (
     <div>
       <Head>
@@ -12,8 +12,19 @@ export default function Home() {
 
       <main className="bg-white">
         <Banner />
-        <Slider />
       </main>
     </div>
   )
+}
+
+export async function getServerSideProps(){
+  const categories = await fetch('http://www.assets.corraditobias.com.ar/categories.json')
+    .then(res => res.json())
+    .catch(e => console.log('Categories api error: ', e))
+
+  return {
+      props: {
+        categories
+      }
+  }
 }
