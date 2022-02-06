@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
+import SectionTitle from '../components/SectionTitle'
+import CategoryCard from '../components/CategoryCard'
 export default function Home({categories}) {
   console.log(categories)
   return (
@@ -12,6 +14,12 @@ export default function Home({categories}) {
 
       <main className="bg-white">
         <Banner />
+        <section className="bg-slate-100 py-10">
+          <div className="container mx-auto">
+            <SectionTitle text={'Categorías'}/>
+            <CategoryCard name={'Restaurantes'} img={'https://images.rappi.com.ar/home-ab-objects/restaurants-1616025326.png?e=webp&d=1920x1'}/>
+          </div>
+        </section>
       </main>
     </div>
   )
