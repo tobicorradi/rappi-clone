@@ -33,7 +33,7 @@ export default function Home({ categories }) {
         </Section>
         <Section backgroundColor={"bg-white"} container={false}>
           <div className="pl-10">
-            <SectionTitle className="mb-8" text={"Categorías"} />
+            <SectionTitle className="mb-8" text={"¡Las mejores promos!"} />
             <div className="pl-5 flex space-x-2 overflow-scroll scrollbar-hide">
               {categories.map((category) => (
                 <div className="relative w-[375px] h-[172px] shrink-0">
