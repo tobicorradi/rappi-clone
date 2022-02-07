@@ -12,9 +12,9 @@ const Header = () => {
                     height={35}
                 />
             </div>
-            <form className="flex flex-1 items-center bg-slate-50 px-4 py-2 rounded text-md mx-7 max-w-xl">
+            <form className="flex sm:flex-1 items-center sm:bg-slate-50 px-4 py-2 rounded text-md sm:mx-7 max-w-xl">
                 <input
-                    className="flex-grow bg-transparent focus:outline-none" 
+                    className="flex-grow bg-transparent focus:outline-none hidden sm:block" 
                     type="text"
                     placeholder="Buscar en Rappi"
                 />
