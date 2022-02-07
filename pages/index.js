@@ -24,7 +24,7 @@ export default function Home({ categories }) {
         >
           <div className="pl-10">
             <SectionTitle className="mb-8" text={"Categorías"} />
-            <div className="flex space-x-3 overflow-scroll scrollbar-hide">
+            <div className="pl-5 md:pl-0 flex space-x-3 overflow-scroll scrollbar-hide">
               {categories.map((category) => (
                 <CategoryCard name={category.name} img={category.img} />
               ))}
