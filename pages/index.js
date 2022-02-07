@@ -14,10 +14,14 @@ export default function Home({categories}) {
 
       <main className="bg-white">
         <Banner />
-        <section className="bg-slate-100 py-10">
-          <div className="container mx-auto">
-            <SectionTitle text={'Categorías'}/>
-            <CategoryCard name={'Restaurantes'} img={'https://images.rappi.com.ar/home-ab-objects/restaurants-1616025326.png?e=webp&d=1920x1'}/>
+        <section className="bg-slate-50 py-12">
+          <div className="pl-10">
+            <SectionTitle className="mb-8" text={'Categorías'}/>
+            <div className="flex space-x-3 overflow-scroll scrollbar-hide">
+              {categories.map(category => (
+                <CategoryCard name={category.name} img={category.img}/>
+              ))}
+            </div>
           </div>
         </section>
       </main>
