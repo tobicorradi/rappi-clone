@@ -3,8 +3,8 @@ import Banner from "../components/Banner";
 import SectionTitle from "../components/SectionTitle";
 import CategoryCard from "../components/CategoryCard";
 import Section from "../components/Section";
+import Image from "next/image";
 export default function Home({ categories }) {
-  console.log(categories);
   return (
     <div>
       <Head>
@@ -24,7 +24,7 @@ export default function Home({ categories }) {
         >
           <div className="pl-10">
             <SectionTitle className="mb-8" text={"Categorías"} />
-            <div className="pl-5 md:pl-0 flex space-x-3 overflow-scroll scrollbar-hide">
+            <div className="pl-5 md:pl-0 flex space-x-2 overflow-scroll scrollbar-hide">
               {categories.map((category) => (
                 <CategoryCard name={category.name} img={category.img} />
               ))}
@@ -34,9 +34,15 @@ export default function Home({ categories }) {
         <Section backgroundColor={"bg-white"} container={false}>
           <div className="pl-10">
             <SectionTitle className="mb-8" text={"Categorías"} />
-            <div className="flex space-x-3 overflow-scroll scrollbar-hide">
+            <div className="pl-5 flex space-x-2 overflow-scroll scrollbar-hide">
               {categories.map((category) => (
-                <CategoryCard name={category.name} img={category.img} />
+                <div className="relative w-[375px] h-[172px] shrink-0">
+                  <Image
+                    className="rounded-lg"
+                    layout="fill"
+                    src="https://images.rappi.com.ar/mobile_promotions/store_12265_1638888910410.png?e=webp&d=1920x1"
+                  />
+                </div>
               ))}
             </div>
           </div>
